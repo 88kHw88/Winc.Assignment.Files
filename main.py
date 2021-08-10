@@ -47,9 +47,9 @@ def cached_files():
 def find_password(input_Cached_Files):
     for name in input_Cached_Files:
         #opent alle files uit de gegeven lokatie                     
-        with open(name) as file:       
+        with open(name) as open_file:       
         #leest de regels van de file en wanneer 'password' wordt gevonden:          
-            for line in file:
+            for line in open_file:
                 if "password" in line:
                     #wordt hieronder de regel waarin 'password' wordt gevonden in een lijst gezet.
                     #de '/n' wordt verwijderd en hou je alleen de 'password' over.
